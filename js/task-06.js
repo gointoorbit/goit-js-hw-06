@@ -3,7 +3,7 @@ const input = document.querySelector("#validation-input");
 const borderColor = (event) => {
   if (
     event.currentTarget.value.length ===
-    Number.parseInt(input.getAttribute("data-length"))
+    Number(input.getAttribute("data-length"))
   ) {
     input.classList.add("valid");
     input.classList.remove("invalid");

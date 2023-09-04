@@ -10,4 +10,4 @@ const outputUserName = (event) => {
     output.textContent = "Anonymous";
   }
 };
-input.addEventListener("change", outputUserName);
+input.addEventListener("input", outputUserName);
